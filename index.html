@@ -15,15 +15,15 @@
     display: block;       /* iframes are inline by default */
     background: #000;
     border: none;         /* Reset default border */
-    height: 87%;        /* Viewport-relative units */
-    width: 100%;
-    margin-top: -5.1%;
+    height: 100vh;        /* Viewport-relative units */
+    width: 90vw;
+    margin-top: -2.9%;
 }
   </style>
-  <body style="background-color:rgb(17, 17, 17);">
+  <body style="background-color:rgba(13,17,23,255);">
 		
 		<div class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar">
+			<nav id="sidebar" style="position: fixed; height: 100vh;">
 				<div class="p-4 pt-5">
 		  		<!-- <a href="#" class="img logo" style="background-image: url(images/GLEE.jpg);"></a> -->
 	        
@@ -73,7 +73,7 @@
                   <a href="#">LunaSat</a>
                 </li>
                 <li>
-                    <a href="#">Radio Frequency</a>
+                    <a href="#rf">Radio Frequency</a>
                 </li>
               </ul>
 	          </li>
@@ -91,33 +91,20 @@
 	      </div>
     	</nav>
 
-      <div id="content" class="p-4 p-md-5">
-
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-            <button type="button" id="sidebarCollapse" class="btn btn-primary">
-              <i class="fa fa-bars"></i>
-              <span class="sr-only">Toggle Menu</span>
-            </button>
-            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-            </button>
-            <div class="row justify-content-center"></div>
-            </div>
-            
-            </nav>
+      <div id="content" class="p-0" style="margin-left: 15%;">
             <br>
             <br>
             
             <!-- <iframe width="957" height="560" src="https://www.youtube.com/embed/24ujpW5nN5Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <video poster="images/GLEE.jpg" autoplay="autoplay" loop="loop" controls="controls" width="640" height="360">
+            <video poster="images/GLEE.jpg" autoplay="autoplay" loop="loop" controls="controls">
               <source src="gleevid.mp4" type="video/mp4"></video>
-            <br>
-            
+              <br>
+              <img id= "rf" src="Screenshot_30.png" alt="rf" style="float: left; width: 50%;">
+              <img src="Screenshot_32.png" alt="rf" style="float: right; width: 50%;">
+              <br>
+              <img src="Screenshot_31.png" alt="rf" style="width: 50%;">
+            </div>
           </div>
-      
-		</div>
     
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
